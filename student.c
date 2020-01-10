@@ -28,11 +28,11 @@ int main() {
   for (int i = 0; i <= 5; i++) {
     printf("Input student name:\n");
     fgets(input, 256, stdin);
-    sscanf(input, "%c", studentArray[i].firstName);
+    sscanf(input, "%s", studentArray[i].firstName);
 
     printf("Input student last name:\n");
     fgets(input, 256, stdin);
-    sscanf(input, "%c", studentArray[i].lastName);
+    sscanf(input, "%s", studentArray[i].lastName);
 
     printf("Input student age:\n");
     fgets(input, 256, stdin);
@@ -44,7 +44,7 @@ int main() {
 
     printf("Done?:\n");
     fgets(input, 256, stdin);
-    sscanf(input, "%c", &answer);
+    sscanf(input, "%s", &answer);
     if (answer == 'y') {
         break;
     }
